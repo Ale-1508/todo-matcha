@@ -1,12 +1,19 @@
-import { Box, Text, HStack, Flex } from "@chakra-ui/react";
+import { Box, Text, Flex } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
+import CreateToDo from "./CreateToDo";
+import colors from "../context/colors";
+
+const boxStyle = {
+  borderRadius:"24px",
+  overflow:"hidden",
+}
 
 const MainSection = () => (
   <FullScreenSection
     justifyContent="center"
     alignItems="center"
     isDarkBackground={true}
-    backgroundColor="#2A4365"
+    backgroundColor={colors.background}
   >
     <Flex 
       gap="10px" 
@@ -15,17 +22,13 @@ const MainSection = () => (
       width="100vw"
       overflow="auto"
     >
+      <CreateToDo boxStyle={boxStyle}/>
       <Box
-        backgroundColor="black" 
-        borderRadius="24px"
-        flex="1"
-        >
-        <Text>Box 1</Text>
-      </Box>
-      <Box
-        backgroundColor="black" 
-        borderRadius="24px"
-        flex="1"
+        { ...boxStyle }
+        flex="2"
+        background="transparent"
+        justifyContent="center"
+        alignContent="center"
         >
         <Text>Box 1</Text>
       </Box>
