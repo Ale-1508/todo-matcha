@@ -1,10 +1,10 @@
-import { Box, Text, Flex, VStack, HStack, Heading } from "@chakra-ui/react";
+import { Box, IconButton, Flex, VStack, HStack, Heading } from "@chakra-ui/react";
 import { useToDoContext } from '../context/toDoContext';
 import Textfield from "./Textfield";
 import colors from "../context/colors";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClock,faExclamation } from "@fortawesome/free-solid-svg-icons";
+import { faChevronRight, faClock, faExclamation } from "@fortawesome/free-solid-svg-icons";
 
 interface Props {
   boxStyle: object,
@@ -40,8 +40,15 @@ const CreateToDo = ( props:Props ) => {
             <VStack spacing="12px">
               <Textfield hint="To-Do"/>
               <HStack justifyContent="start" width="100%">
-                <FontAwesomeIcon icon={faClock} { ...iconStyle }/>
-                <FontAwesomeIcon icon={faExclamation} { ...iconStyle }/>
+                <HStack justifyContent="start" width="100%">
+                  <FontAwesomeIcon icon={faClock} { ...iconStyle }/>
+                  <FontAwesomeIcon icon={faExclamation} { ...iconStyle }/>
+                </HStack>   
+                  <IconButton
+                    colorScheme='blue'
+                    aria-label='Search database'
+                    icon={<FontAwesomeIcon icon={faChevronRight} { ...iconStyle }/>}
+                  />
               </HStack>
             </VStack>
           </form>
