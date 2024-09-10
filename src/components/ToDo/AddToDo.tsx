@@ -1,5 +1,5 @@
-import { Box, IconButton, Flex, VStack, HStack, Heading } from "@chakra-ui/react";
-import { useToDoContext } from '../../context/toDoContext';
+import { IconButton, Flex, VStack, HStack } from "@chakra-ui/react";
+//import { useToDoContext } from '../../context/toDoContext';
 import Textfield from "../Textfield";
 import colors from "../../context/colors";
 
@@ -22,7 +22,7 @@ const hoverStyle: React.CSSProperties = {
 }
 
 const AddToDo = () => {
-  const context = useToDoContext();
+  //const context = useToDoContext();
   return (
     <Flex 
       width="100%"
