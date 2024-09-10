@@ -3,6 +3,7 @@ import { useToDoContext } from '../../context/toDoContext';
 import colors from "../../context/colors";
 
 import AddToDo from "./AddToDo";
+import ToDoList from "./ToDoList";
 
 interface Props {
   boxStyle: object,
@@ -26,12 +27,7 @@ const ToDo = ( props:Props ) => {
       >
         <VStack height="100%" width="100%" justifyContent="space-between">
           <Heading as="h2">To-Do List</Heading>
-          <Flex 
-            flex="1"
-            bg="transparent"
-            height="100%"
-            width="100%"
-          />
+          <ToDoList/>
           <AddToDo />
         </VStack>
       </Flex>
