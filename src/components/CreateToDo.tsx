@@ -1,5 +1,4 @@
 import { Box, IconButton, Flex, VStack, HStack, Heading } from "@chakra-ui/react";
-import { useToDoContext } from '../context/toDoContext';
 import Textfield from "./Textfield";
 import colors from "../context/colors";
 
@@ -21,7 +20,6 @@ const iconStyle:IconStyle = {
 }
 
 const CreateToDo = ( props:Props ) => {
-  const context = useToDoContext();
   return (
     <Box flex="1" { ...props.boxStyle } >
       <Flex 
@@ -38,7 +36,7 @@ const CreateToDo = ( props:Props ) => {
           <Heading as="h2">Add ToDo</Heading>
           <form action="">
             <VStack spacing="12px">
-              <Textfield hint="To-Do"/>
+              <Textfield placeoholder="To-Do"/>
               <HStack justifyContent="start" width="100%">
                 <HStack justifyContent="start" width="100%">
                   <FontAwesomeIcon icon={faClock} { ...iconStyle }/>

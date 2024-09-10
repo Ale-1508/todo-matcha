@@ -1,6 +1,6 @@
 import { Box, Text, Flex } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
-import CreateToDo from "./CreateToDo";
+import ToDo from "./ToDo/ToDo";
 import colors from "../context/colors";
 
 const boxStyle = {
@@ -22,7 +22,7 @@ const MainSection = () => (
       width="100vw"
       overflow="auto"
     >
-      <CreateToDo boxStyle={boxStyle}/>
+      <ToDo boxStyle={boxStyle}/>
       <Box
         { ...boxStyle }
         flex="2"
