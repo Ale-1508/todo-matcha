@@ -1,6 +1,5 @@
-import { IconButton, Flex, Text, VStack, HStack } from "@chakra-ui/react";
+import { Flex, VStack } from "@chakra-ui/react";
 //import { useToDoContext } from '../../context/toDoContext';
-import colors from "../../context/colors";
 import ToDoContainer from "./ToDoContainer";
 
 interface ToDo {
@@ -27,6 +26,10 @@ const toDoList : ToDo[] = [
   },
 ]
 
+const toDoListComponents = toDoList.map((item, index) => (
+  <ToDoContainer toDo={item}/>
+))
+
 const ToDoList = () => {
   //const context = useToDoContext();
   return (
@@ -35,11 +38,10 @@ const ToDoList = () => {
       bg="transparent"
       height="100%"
       width="100%"
+      padding="16px"
     >
-      <VStack>
-        {toDoList.map((item, index) => (
-          <ToDoContainer toDo={item}/>
-        ))}
+      <VStack width="100%" spacing="16px">
+        {toDoListComponents}
       </VStack>
     </Flex>
   );

@@ -26,7 +26,7 @@ const ToDo = ( props:Props ) => {
       gap="10px" 
       >
         <VStack height="100%" width="100%" justifyContent="space-between">
-          <Heading as="h2">To-Do List</Heading>
+          <Heading as="h2" color={colors.lightBackground}>To-Do List</Heading>
           <ToDoList/>
           <AddToDo />
         </VStack>

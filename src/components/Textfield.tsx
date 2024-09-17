@@ -14,7 +14,7 @@ const Textfield = ( props:Props ) => {
   return (
     <Input
       color={colors.text()}
-      bg="#f8f8f8"
+      bg={colors.lightBackground}
       borderColor="transparent"
       _focus={ focusStyle }
       {...props}

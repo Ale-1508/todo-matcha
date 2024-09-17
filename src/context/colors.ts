@@ -19,8 +19,12 @@ const colors = {
   accents:"#E49273",
   details:"#A37A74",
   
+  lightBackground:"#f8f8f8",
+
   text: () => getOpacity(0, 0, 0.06, 1),
   test:"#2B6870",
+
+  important: "#e51a39",
 }
 
   
