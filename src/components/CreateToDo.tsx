@@ -36,7 +36,7 @@ const CreateToDo = ( props:Props ) => {
           <Heading as="h2">Add ToDo</Heading>
           <form action="">
             <VStack spacing="12px">
-              <Textfield placeoholder="To-Do"/>
+              <Textfield placeholder="To-Do"/>
               <HStack justifyContent="start" width="100%">
                 <HStack justifyContent="start" width="100%">
                   <FontAwesomeIcon icon={faClock} { ...iconStyle }/>

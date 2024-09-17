@@ -2,7 +2,7 @@ import { Input } from '@chakra-ui/react'
 import colors from '../context/colors'
 
 interface Props {
-  placeoholder?:string
+  placeholder?:string
   width?:string
 }
 
@@ -17,6 +17,7 @@ const Textfield = ( props:Props ) => {
       bg={colors.lightBackground}
       borderColor="transparent"
       _focus={ focusStyle }
+      _placeholder={{ opacity: 0.8, color: "black"  }}
       {...props}
     />
   );

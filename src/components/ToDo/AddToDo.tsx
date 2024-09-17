@@ -35,7 +35,7 @@ const AddToDo = () => {
     >
       <form style={{width:"100%"}}>
         <VStack spacing="16px" width="100%">
-          <Textfield placeoholder="To-Do" width="100%"/>
+          <Textfield placeholder="To-Do" width="100%"/>
           <HStack justifyContent="start" width="100%">
             <HStack justifyContent="start" width="100%">
               <IconButton
