@@ -21,7 +21,7 @@ const ToDoContainer = ( props:Props ) => {
       width="100%"
       bg={ colors.lightBackground }
       color={ colors.text() }
-      padding="12px"
+      padding="8px 12px 12px 12px"
       borderRadius="12px"
     >
       <HStack gap="16px" align="center" >
