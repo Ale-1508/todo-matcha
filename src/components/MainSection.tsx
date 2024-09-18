@@ -10,7 +10,7 @@ const boxStyle = {
 }
 
 const MainSection = () => {
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
   
   return(
     <FullScreenSection
